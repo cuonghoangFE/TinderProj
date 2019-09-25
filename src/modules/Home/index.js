@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import {
+  Dimensions,
   View,
   Image,
   Text,
@@ -152,7 +153,7 @@ class Home extends React.Component {
     if (!user.user) {
       return (
         <View style={styles.container}>
-          <Text>Something went wrong!</Text>
+          <Text>There is no users at the moment</Text>
         </View>
       );
     }
@@ -221,6 +222,7 @@ class Home extends React.Component {
           ref={component => (this._toast = component)}
           style={styles.toastBg}
           textStyle={styles.toastText}
+          positionValue={Dimensions.get('window').height - 50}
           fadeInDuration={750}
           fadeOutDuration={1000}
           opacity={0.8}

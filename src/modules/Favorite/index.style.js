@@ -12,6 +12,7 @@ export default StyleSheet.create({
   },
   favoriteItem: {
     flex: 1,
+    flexWrap: 'wrap',
     backgroundColor: 'white',
     flexDirection: 'row',
     padding: 12,
@@ -23,7 +24,8 @@ export default StyleSheet.create({
     height: 60,
     marginRight: 8,
   },
-  text: {
-    flexWrap: 'wrap',
+  infoView: {
+    flex: 1,
   },
+  text: {},
 });

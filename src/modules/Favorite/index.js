@@ -13,7 +13,7 @@ const Favorite = ({myFavoritesStore}) => {
       {
         text: 'Delete',
         backgroundColor: 'red',
-        underlayColor: 'rgba(0, 0, 0, 1, 0.6)',
+        underlayColor: '#f0f',
         onPress: () => {
           const filtered = myFavorites.filter(
             myFavoriteItem => myFavoriteItem.seed !== item.seed,
@@ -30,7 +30,7 @@ const Favorite = ({myFavoritesStore}) => {
             source={{uri: item.user.picture}}
             style={styles.favoriteItemImage}
           />
-          <View>
+          <View style={styles.infoView}>
             <Text style={styles.text}>
               {commonUtils.capitalizeLetter(
                 Object.values(item.user.name).join(' '),

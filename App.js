@@ -12,8 +12,9 @@ import SafeAreaView from 'react-native-safe-area-view';
 
 import AppProvider from './src/core/AppProvider';
 import AppContainer from './src/modules/Navigation';
+import withRequestNetwork from './src/core/RequestNetwork';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <AppProvider>
@@ -25,6 +26,8 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default withRequestNetwork(App);
 
 const styles = StyleSheet.create({
   safeArea: {
