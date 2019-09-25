@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "start:ios": "react-native run-ios --simulator=\"iPhone Xʀ\"",
+    "start:ios": "react-native run-ios",
+    "start:android": "react-native run-android",
     "test": "jest",
     "lint": "eslint ."
   },
