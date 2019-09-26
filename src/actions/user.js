@@ -12,13 +12,13 @@ const userStore = value => {
   });
   const {synced, user} = state;
 
-  async function getUserStore() {
+  const getUserStore = () => {
     setState({synced: true, user: value});
-  }
+  };
 
-  async function updateUserStore(newValue) {
+  const updateUserStore = newValue => {
     setState({synced: false, user: newValue});
-  }
+  };
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {

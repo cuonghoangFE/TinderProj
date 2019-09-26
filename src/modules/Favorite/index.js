@@ -13,7 +13,7 @@ const Favorite = ({myFavoritesStore}) => {
       {
         text: 'Delete',
         backgroundColor: 'red',
-        underlayColor: '#f0f',
+        underlayColor: '#c21325',
         onPress: () => {
           const filtered = myFavorites.filter(
             myFavoriteItem => myFavoriteItem.seed !== item.seed,

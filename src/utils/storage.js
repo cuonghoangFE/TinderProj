@@ -28,20 +28,16 @@ const useAsyncStorage = (key, defaultValue) => {
   });
   const {synced, storageValue} = state;
 
-  async function pullFromStorage() {
-    try {
-      const value = await getItem(key);
-      setState({synced: true, storageValue: value});
-    } catch (error) {
-      console.log(error.message);
-      setState({synced: true, storageValue: defaultValue});
-    }
-  }
+  const pullFromStorage = async () => {
+    getItem(key)
+      .then(itemValue => setState({synced: true, storageValue: itemValue}))
+      .catch(e => console.log(e.message));
+  };
 
-  async function updateStorage(newValue) {
+  const updateStorage = async newValue => {
     setState({synced: false, storageValue: newValue});
-    await setItem(key, newValue);
-  }
+    setItem(key, newValue);
+  };
 
   useEffect(() => {
     pullFromStorage();
