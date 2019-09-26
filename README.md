@@ -9,3 +9,8 @@
 - From Root folder again, ```yarn start:ios``` or ```npm run start:ios``` to run project
 
 - For android, make sure you run simulator before ```yarn start:android```
+
+## UNIT TEST
+
+- For run all test, ```yarn test``` or ```yarn test -u```
+- For print coverage, ```yarn test:coverage```
