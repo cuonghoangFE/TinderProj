@@ -1,4 +1,3 @@
-import React from 'react';
 import {renderHook} from '@testing-library/react-hooks';
 import {act} from 'react-test-renderer';
 
@@ -41,21 +40,24 @@ describe('storageUtils', () => {
   });
 
   describe('useAsyncStorage method', () => {
-    
-    it('will setState with default value when not found key in store', () => {
-      const setState = jest.fn();
-      const useStateSpy = jest.spyOn(React, 'useState');
-      useStateSpy.mockImplementation(init => [init, setState]);
+    beforeEach(() => {
+      jest.useFakeTimers();
+    });
 
+    afterEach(() => {
+      jest.useRealTimers();
+    });
+    it('will setState with default value when not found key in store', async () => {
       const {result} = renderHook(() =>
         storageUtils.useAsyncStorage('test', ''),
       );
 
       act(() => {
         result.current[1]('new title');
+        jest.runAllTimers();
       });
 
-      expect(result.current[0]).toBe('');
+      expect(result.current[0]).toBe('new title');
     });
   });
 });

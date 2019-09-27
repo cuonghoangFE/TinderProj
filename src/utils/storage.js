@@ -28,7 +28,7 @@ const useAsyncStorage = (key, defaultValue) => {
   });
   const {synced, storageValue} = state;
 
-  const pullFromStorage = async () => {
+  const pullFromStorage = () => {
     getItem(key)
       .then(itemValue => setState({synced: true, storageValue: itemValue}))
       .catch(e => console.log(e.message));

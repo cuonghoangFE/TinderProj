@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1569518169819" clover="3.2.0">
-  <project timestamp="1569518169819" name="All files">
-    <metrics statements="110" coveredstatements="109" conditionals="24" coveredconditionals="21" methods="41" coveredmethods="39" elements="175" coveredelements="169" complexity="0" loc="110" ncloc="110" packages="6" files="9" classes="9"/>
+<coverage generated="1569553742959" clover="3.2.0">
+  <project timestamp="1569553742959" name="All files">
+    <metrics statements="110" coveredstatements="109" conditionals="21" coveredconditionals="18" methods="40" coveredmethods="39" elements="171" coveredelements="166" complexity="0" loc="110" ncloc="110" packages="6" files="9" classes="9"/>
     <package name="TinderProj">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.js" path="/Users/hoangcuong/Desktop/TinderProj/App.js">
@@ -99,7 +99,7 @@
       </file>
     </package>
     <package name="TinderProj.src.utils">
-      <metrics statements="47" coveredstatements="46" conditionals="21" coveredconditionals="18" methods="22" coveredmethods="20"/>
+      <metrics statements="47" coveredstatements="46" conditionals="18" coveredconditionals="15" methods="21" coveredmethods="20"/>
       <file name="API.js" path="/Users/hoangcuong/Desktop/TinderProj/src/utils/API.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="6" type="stmt"/>
@@ -127,32 +127,32 @@
         <line num="17" count="4" type="stmt"/>
       </file>
       <file name="storage.js" path="/Users/hoangcuong/Desktop/TinderProj/src/utils/storage.js">
-        <metrics statements="27" coveredstatements="26" conditionals="21" coveredconditionals="18" methods="15" coveredmethods="13"/>
+        <metrics statements="27" coveredstatements="26" conditionals="18" coveredconditionals="15" methods="14" coveredmethods="13"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
-        <line num="9" count="8" type="cond" truecount="4" falsecount="1"/>
-        <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="12" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="10" type="cond" truecount="4" falsecount="1"/>
+        <line num="10" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
         <line num="19" count="3" type="cond" truecount="2" falsecount="1"/>
         <line num="21" count="3" type="cond" truecount="2" falsecount="1"/>
         <line num="24" count="3" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="31" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
-        <line num="37" count="2" type="cond" truecount="3" falsecount="0"/>
+        <line num="37" count="3" type="cond" truecount="3" falsecount="0"/>
         <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
         <line num="50" count="3" type="stmt"/>
         <line num="55" count="3" type="stmt"/>
       </file>
